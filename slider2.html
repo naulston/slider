@@ -1,0 +1,99 @@
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0;
+  background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%;
+  overflow: hidden; 
+}
+figure.slider { 
+  position: relative; 
+  width: 500%;
+  font-size: 0; animation: 25s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%;
+  height: auto;
+  display: inline-block; 
+  position: inherit; 
+}
+figure.slider img { 
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; 
+  width: 100%;
+  font-size: 2rem; 
+  padding: .6rem; 
+}
+</style>
+</head>
+
+<!--<base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">-->
+<base href="http://www.naulston.com">
+<div id="captioned-gallery">
+  <figure class="slider">
+
+    <figure>
+      <img src="img/ste-catherine-car-free.jpg" alt>
+      <figcaption>Lawn on a Street</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/Pedestrian_Street6.jpg" alt>
+      <figcaption>Pedestrian Street Concept</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/broome-street-block-party.jpg" alt>
+      <figcaption>Block Party</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/First_Friday.jpg" alt>
+      <figcaption>Art Festival</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/NYC_NYCDOT_4.jpg" alt>
+      <figcaption>Rethinking the Streetscape</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/street_concert.jpg" alt>
+      <figcaption>Street Music</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/StreetFoodFest.jpg" alt>
+      <figcaption>Pop-ups and Festivals</figcaption>
+    </figure>
+
+  </figure>
+</div>
